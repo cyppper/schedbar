@@ -1,0 +1,107 @@
+# Python
+################################################################################
+# Байт-код / оптимизированные / DLL файлы
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Дистрибутивы / упаковка
+build/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Логи установщика
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Отчеты о тестировании / покрытии
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Виртуальные окружения
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Кэш Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype
+.pytype/
+
+# macOS
+################################################################################
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+# Эскизы, создаваемые macOS
+Icon?
+
+# JetBrains / PyCharm
+################################################################################
+.idea/
+*.iml
+# *.iws # Обычно покрывается .idea/ или является устаревшим для новых версий
+# shelf/ # Для PyCharm >= 2021.3, если используется
+
+# Windows
+################################################################################
+# Файлы кэша эскизов Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# Корзина, используемая на файловых ресурсах
+$RECYCLE.BIN/
+
+# Специфичные для проекта настройки
+################################################################################
+# Игнорировать всё содержимое папки 'downloads'
+downloads/*
+
+# Чтобы сама папка 'downloads/' отслеживалась Git (даже если она пуста
+# или её содержимое игнорируется), создайте пустой файл с именем .gitkeep внутри неё.
+# Затем раскомментируйте следующую строку, чтобы .gitkeep не игнорировался.
+# ВАЖНО: Выполните в терминале:
+#   touch downloads/.gitkeep
+#   git add downloads/.gitkeep
+!downloads/.gitkeep
+
+# Примечание:
+# Папки 'static/' и 'templates/' и их содержимое будут отслеживаться по умолчанию.
+# Файлы '*.py', 'requirements.txt', 'docker-compose.yml', 'Dockerfile', 'nginx.conf', 'README.md'
+# также будут отслеживаться по умолчанию, так как они не подпадают под шаблоны игнорирования выше.
